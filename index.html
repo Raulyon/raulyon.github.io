@@ -6,84 +6,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <title>Document</title>
-<style>
-    .header{
-        text-align: center;
-        margin-top: 10%;
-    }
-    .menu{
-        margin-top: 8%;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-family: "DM Serif Text", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    .sidebar{
-        float: left;
-        margin-top: 1%;
-        margin-left: 5%;
-        width: 20%;
-        height: 190px;
-        text-align: justify;
-    }
-    .konten{
-        float: right;
-        width: 60%;
-        margin-right: 9%;
-        height: 190px;
-        text-align: justify;
-        word-spacing: 0%;
-    }
-    .konten2{
-        margin-top: 35%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-</style>
-</head>
-    <body>
-        <div class="header"><a href="https://www.harmonyos.com/en/" title="Click Here"><img alt="Harmony Os" src="IMG/HarmonyOS.png" style="width: 500px;"></a></div>
-        <div class="menu"><p><b><span style="color: rgb(18, 69, 179);"><a href="https://id.wikipedia.org/wiki/HarmonyOS" title="Click Me If You Want">HarmonyOS </a></span></b>adalah operating system dari perusahaan elektronik Huawei. 
-        HarmonyOS berbeda dari operating sistem yang ada di android. Mengapa Huawei menciptakan HarmonyOS? </p></div>
-        <div class="sidebar">HarmonyOS adalah sistem operasi yang dikembangkan oleh Huawei dengan tujuan untuk menyediakan platform yang terintegrasi dan serbaguna,
-            yang bisa digunakan di berbagai perangkat, seperti smartphone, tablet, perangkat IoT (Internet of Things), 
-            hingga perangkat elektronik lainnya. HarmonyOS pertama kali diperkenalkan pada tahun 2019 oleh Huawei, dan dirancang untuk menggantikan Android pada beberapa perangkat Huawei.
-        </div>
-        <div class="konten">
-            <p>
-            HarmonyOS bekerja dengan pendekatan yang cukup unik dibandingkan dengan sistem operasi tradisional, 
-            berfokus pada integrasi lintas perangkat dan efisiensi. 
-            Berikut adalah cara kerja HarmonyOS secara lebih rinci:
-            <ul>
-                <li><b>Mikrokernel sebagai Dasar Sistem</b></li>
-                <p>HarmonyOS menggunakan mikrokernel sebagai dasar dari sistem operasinya.
-                  Ini berbeda dengan sistem operasi lain yang menggunakan monolitik kernel. 
-                  Mikrokernel ini memiliki fungsi dasar yang minimal, mengelola tugas-tugas seperti komunikasi antar perangkat keras dan perangkat lunak, serta menjaga keamanan sistem.</p>
-                <li><b>Arsitektur Terdistribusi (Distributed Architecture)</b></li>
-                <p>
-                    Salah satu kekuatan utama HarmonyOS adalah arsitektur terdistribusi. 
-                    Artinya, 
-                    HarmonyOS memungkinkan perangkat-perangkat berbeda dalam ekosistem yang sama untuk saling berkomunikasi dan bekerja bersama dengan mulus.
-                </p>
-            </ul>
+    <title>What is HarmonyOS?</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #4f4f4f90);
+            color: white;
+            line-height: 1.6;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 100px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn{
+            0%{
+                opacity: 0;
+                transform: translateY(-50);
+            }
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        nav {
+            background-color: #0050ab;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 3s ease-in;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #6b6eff;
+        }
+        #section1{
+            margin: 20px 40px;
+            text-align: justify;
+            animation: fadeIn 3s ease-in;
+            font-family: 'Helvetica', sans-serif;
+            font: bold;
+        }
+    </style>
+    </head>
+        <body>
+            <header>
+                <img alt="" src="IMG/HarmonyOS.png" style="width: 300px;">
+            </header>
+        <nav>
+            <a href="#section1">HARMONYOS</a>
+            <a href="#section2">ABOUT IT</a>
+            <a href="#section3">PENDAPAT KAMI</a>
+            <a href="#section4">KESIMPULAN</a>
+        </nav>
+        <section id="section1">
+            <h1 style="color: #0050ab;">HarmonyOS</h1>
+            <p style="color: rgb(0, 0, 0);">
+                HarmonyOS adalah sistem operasi yang dikembangkan oleh Huawei, pertama kali diperkenalkan pada tahun 2019.
+                Sistem operasi ini dirancang untuk berbagai perangkat, termasuk smartphone, tablet, perangkat IoT (Internet of Things),
+                televisi pintar, dan perangkat lainnya. HarmonyOS dirancang untuk menjadi fleksibel, efisien, dan dapat bekerja di berbagai perangkat dengan cara yang terintegrasi dan mulus.
             </p>
-    </div>
-        <div class="konten2">
-            <p>
-                <ul>
-                    <li><b>Kompatibilitas Aplikasi Android</b></li>
-                    <p>HarmonyOS kompatibel dengan aplikasi Android, yang memungkinkan aplikasi Android untuk berjalan di perangkat HarmonyOS tanpa masalah. 
-                        Ini berarti bahwa meskipun HarmonyOS adalah sistem operasi yang independen, 
-                        pengguna dapat terus menggunakan aplikasi Android yang sudah ada melalui Huawei AppGallery atau toko aplikasi lainnya.</p>
-                    <li><b>Penggunaan Microservices untuk Pengembangan Aplikasi</b></li>
-                    <p>Pengembang aplikasi di HarmonyOS menggunakan pendekatan microservices.
-                         Ini berarti bahwa aplikasi di HarmonyOS terdiri dari komponen-komponen yang lebih kecil dan dapat diintegrasikan secara modular ke dalam berbagai perangkat.
-                    </p>
-                </ul>
-            </p>
-        </div>
-        <div class="footer"></div>
+        </section>
+        <section id="section2">
+
+        </section>
+        <section id="section3">
+
+        </section>
+        <section id="section4">
+
+        </section>
     </body>
 </html>
